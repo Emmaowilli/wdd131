@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #cce9ec;
+    background-color: #272c28;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -30,8 +30,8 @@ main {
     padding: 20px;
 }
 .card {
-    background: #f19eeb; /* Light purple background */
-    box-shadow: 0px 4px 8px rgba(236, 85, 155, 0.1);
+    background: #b656ac; /* Light purple background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
