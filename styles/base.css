@@ -30,7 +30,7 @@ main {
     padding: 20px;
 }
 .card {
-    background: #b656ac; /* Light purple background */
+    background: #b656ac; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 20px;
@@ -45,7 +45,7 @@ main {
 }
 footer {
     background: #222;
-    color: rgb(231, 93, 224);
+    color: rgb(121, 231, 93);
     padding: 20px;
     margin-top: 20px;
 }
