@@ -37,8 +37,8 @@ nav .navigation a {
 }
 
 nav .navigation a:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(209, 197, 241);
+    color: rgb(231, 25, 169);
     text-decoration: underline;
 }
 
