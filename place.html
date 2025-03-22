@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover Kampala</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Kampala</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Responsive hero image using picture -->
+      <picture>
+        <source srcset="images/apeaceful view of Lake Victoria near Kampala, Uganda.jpg" media="(max-width: 600px)" />
+        <source srcset="images/acultural Landmark in Kampala, Uganda.jpg" media="(max-width: 1000px)" />
+        <img src="images/A scenic panoramic view of Kampala, Uganda.jpg" alt="Kampala city view" class="hero-img" />
+      </picture>
+      
+      <!-- Left box -->
+      <div class="data-box">
+
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 189 km²</p>
+        <p><strong>Population:</strong> ~1.5 million</p>
+        <p><strong>Capital:</strong> Kampala</p>
+        <p><strong>Languages:</strong> English, Luganda</p>
+        <p><strong>Currency:</strong> Ugandan Shilling</p>
+        <p><strong>Time Zone:</strong> UTC+3</p>
+        <p><strong>Calling Code:</strong> +256</p>
+        <p><strong>Internet TLD:</strong> .ug</p>
+      </div>
+
+      <div class="weather-box">
+        <h2>Weather 🌤️</h2>
+        <p><strong>Temperature:</strong> <span id="temp">24</span>°C</p>
+        <p><strong>Wind:</strong> <span id="speed">10</span> km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="chill"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Owilli | Kampala, Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+
