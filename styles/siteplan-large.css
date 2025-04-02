@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E6F0FA; 
+    color: #333; 
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #e772b3; 
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #D4A017;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+#nav-toggle {
+    display: none; 
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+#mission {
+    grid-column: 1 / 2;
+}
+
+#greeting {
+    grid-column: 2 / 3;
+    align-self: start;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #e62fcd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4eb314;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #D4A017;
+    text-decoration: none;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #E6F0FA;
+}
+
+.dark-theme h1, .dark-theme h2 {
+    color: #E6F0FA;
+}
+
+.dark-theme nav a {
+    color: #E6F0FA;
+}
+
+.dark-theme nav a:hover {
+    color: #D4A017;
+}
+
+.dark-theme button {
+    background-color: #E6F0FA;
+    color: #333;
+}
+
+.dark-theme button:hover {
+    background-color: #d1e6f5;
+}
+
+.dark-theme footer {
+    background-color: #444;
+}
+
+:focus {
+    outline: 2px solid #D4A017;
+    outline-offset: 2px;
+}

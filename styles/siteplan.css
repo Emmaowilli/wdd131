@@ -1,0 +1,72 @@
+body {
+    background-color: #E6F0FA;
+    color: #333;
+}
+
+header {
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+#nav-toggle {
+    display: block; 
+    position: relative;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color:#0d1515 ;
+    cursor: pointer;
+}
+
+nav ul {
+    flex-direction: column;
+    text-align: right;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+main {
+    display: block;
+    padding: 0 15px;
+}
+
+section {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #E6F0FA;
+}
+
+.dark-theme #nav-toggle {
+    color: #E6F0FA;
+}

@@ -1,0 +1,43 @@
+header {
+    padding: 1.5rem;
+}
+
+#menuBtn {
+    display: none; 
+}
+
+#navMenu {
+    display: block; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+}
+
+figure {
+    transition: transform 0.3s; 
+}
+
+figure:hover {
+    transform: scale(1.05); 
+}
+
+img {
+    height: 300px; 
+}
+
+figcaption {
+    font-size: 1rem; 
+
+}
