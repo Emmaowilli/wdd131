@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector("nav ul");
+    const hamburger = document.getElementById("menu-btn");
+    const navMenu = document.getElementById("nav-menu");
 
     hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("hidden"); // Toggle visibility of the entire nav
         hamburger.textContent = navMenu.classList.contains("hidden") ? "☰" : "✖";
     });
 
-    const footer = document.querySelector("footer");
-    const year = new Date().getFullYear();
-    const lastModified = document.lastModified;
-
-    footer.innerHTML += `<p>&copy; ${year} Temple Album | Last Updated: ${lastModified}</p>`;
+    // Footer updates
+    const currentYear = document.getElementById("currentyear");
+    const lastModified = document.getElementById("lastModified");
+    
+    currentYear.textContent = new Date().getFullYear();
+    lastModified.textContent = document.lastModified;
 });
