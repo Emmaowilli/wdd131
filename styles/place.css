@@ -1,71 +1,113 @@
-/* Make the hero section fill the screen with background */
+:root {
+  --primary-color: #2e7d32; /* Uganda flag green */
+  --secondary-color: #f9a825; /* Uganda flag yellow */
+  --text-color: #ffffff; /* High contrast */
+  --background-dark: #b71c1c; /* Uganda flag red */
+  --box-bg: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+}
+
 .hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-  }
-  
-  /* Hero image styles */
-  .hero picture,
-  .hero .hero-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  /* Positioning Data (Top-Right) and Weather (Bottom-Left) */
-  .data-box {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero picture,
+.hero .hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.data-box,
+.weather-box {
+  background-color: var(--box-bg);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.data-box {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.weather-box {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.data-box h2,
+.weather-box h2 {
+  margin-top: 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.weather-box h2.weather::after {
+  content: "⛅";
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+
+.weather-icon {
+  display: none; /* Hidden by default, shown in mobile */
+}
+
+footer {
+  background-color: var(--background-dark);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .data-box,
   .weather-box {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: static;
+    width: 90%;
+    margin: 10px auto;
   }
-  
-  /* Title styling */
-  .data-box h2,
-  .weather-box h2 {
-    margin-top: 0;
-    background-color: #2e7d32;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 1.2em;
+
+  .hero {
+    flex-direction: column;
+    min-height: auto;
   }
-  
-  /* Responsive Fix */
-  @media (max-width: 600px) {
-    .data-box {
-      top: 10px;
-      right: 10px;
-      width: 90%;
-    }
-  
-    .weather-box {
-      bottom: 10px;
-      left: 10px;
-      width: 90%;
-    }
+
+  .weather-box h2.weather::after {
+    content: ""; /* Remove emoticon in mobile */
   }
+
+  .weather-icon {
+    display: inline-block; /* Show SVG in mobile */
+    vertical-align: middle;
+  }
+}
+
   
   
   
