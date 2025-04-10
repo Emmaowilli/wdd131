@@ -1,0 +1,45 @@
+/* Large Screen Styles for References Page */
+.references {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reference-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reference-card h3 {
+    font-size: 1.8em;
+    color: #D4A017;
+    margin-bottom: 15px;
+}
+
+.reference-card p {
+    font-size: 1.3em;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+    .references {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .reference-card {
+        padding: 35px;
+    }
+}

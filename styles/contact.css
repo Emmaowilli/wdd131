@@ -1,0 +1,91 @@
+/* General Styles for Contact Page */
+.contact {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details h3 {
+    font-size: 1.5em;
+    color: #D4A017;
+    margin-bottom: 5px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #D4A017;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #b87b15;
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1em;
+    }
+
+    .contact-form button {
+        font-size: 1.1em;
+    }
+}
