@@ -1,5 +1,3 @@
-// JavaScript for Services Page
-
 document.addEventListener('DOMContentLoaded', () => {
     const services = [
         {

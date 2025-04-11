@@ -38,7 +38,6 @@ button:hover,
     transform: translateY(-2px);
 }
 
-/* Nav Button */
 #nav-toggle {
     background-color: var(--button-bg);
     color: var(--button-text);
@@ -53,7 +52,6 @@ button:hover,
     color: var(--primary-color);
 }
 
-/* Highlight testimonial headings */
 .testimonial-name {
     color: var(--accent-color);
     font-size: 1.1rem;

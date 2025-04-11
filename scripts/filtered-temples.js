@@ -127,3 +127,9 @@ const navMenu = document.querySelector("#navMenu");
 menuBtn?.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 });
+
+window.addEventListener("load", () => {
+    displayTemples(temples); // 👈 This makes the homepage display automatically
+});
+
+

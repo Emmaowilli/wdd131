@@ -1,5 +1,3 @@
-// JavaScript for Contact Page
-
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('.contact-form form');
 

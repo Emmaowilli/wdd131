@@ -1,5 +1,3 @@
-// JavaScript for References Page
-
 document.addEventListener('DOMContentLoaded', () => {
     const references = [
         {
