@@ -14,9 +14,22 @@ h2 {
 .reference-card {
     background-color: #f9f9f9;
     padding: 30px;
-    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: block; 
+    text-align: center;
+}
+
+.reference-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0 auto 15px; 
+}
+
+.reference-text {
+    padding: 0 10px;
 }
 
 .reference-card h3 {
@@ -30,15 +43,20 @@ h2 {
     color: #333;
     line-height: 1.6;
 }
-
 @media (min-width: 1024px) {
     .references {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(1, 2fr);
         gap: 30px;
     }
-
-    .reference-card {
-        padding: 35px;
-    }
 }
+.logo {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+

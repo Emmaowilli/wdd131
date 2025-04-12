@@ -17,6 +17,16 @@ h2 {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    text-align: center;
+}
+
+.reference-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .reference-card h3 {
@@ -29,25 +39,11 @@ h2 {
     font-size: 1.1em;
     color: #333;
 }
-
-@media (max-width: 600px) {
-    .references {
-        padding: 10px;
-    }
-
-    .reference-card {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    .reference-card h3 {
-        font-size: 1.3em;
-    }
-
-    .reference-card p {
-        font-size: 1em;
-    }
+.logo {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
 }
